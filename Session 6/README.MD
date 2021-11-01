@@ -62,7 +62,7 @@ Output then is mu and sigma of size (3,4) each.
 
 # Accuracy and Loss Plots
 
-![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/images/s6_graphs.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/s6_graphs.png)
 
 We notice that Group & Layer normalization perform well in lower epochs, all 3 eventually converge by the time we get to the 20th epoch. It should also be noted that batch normalization appears to perform better at the start up until around the second epoch.
 
