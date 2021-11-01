@@ -11,8 +11,8 @@ The Net class defines a torch model with the architecture specified. When callin
 
 The different normalization methods work to standardise the input to a layer for each mini-batch.
 
-batch_size = 4
-num_channels = 6
+batch_size = 3
+num_channels = 4
 
 ## Batch Norm ( with L1 )
 
@@ -24,9 +24,9 @@ For this reason, the output is a mu and sigma for each channel.
 
 ##### Example
 
-mu & sigma of Batch size 4 each
+mu & sigma of Batch size 3 each
 
-![image](https://user-images.githubusercontent.com/7797349/121754676-0e79cd00-caca-11eb-85b6-4ddd0049db49.png)
+![image](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/BN_calc.png)
 
 ## Layer Norm
 
@@ -40,7 +40,7 @@ The output then is a mu and sigma for each image in the batch.
 
 mu & sigma of size 4 each
 
-![image](https://user-images.githubusercontent.com/7797349/121755709-bee8d080-cacc-11eb-984e-504eecd8a3d3.png)
+![image](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/LN_calc.png)
 
 ## Group Norm
 
@@ -48,17 +48,13 @@ Group norm is somewhat of a combination of the two concepts described above. The
 
 ### Output
 
-Each group consisting of 2 channels (3 groups)
-
-The output then is mu and sigma of dimension:
-number of grouped channels by number of images.
+Each group consisting of 2 channels (6 groups)
 
 ##### Example
 
-Output then is mu and sigma of size (3,4) each.
+Output then is mu and sigma for each group
 
-![image](https://user-images.githubusercontent.com/7797349/121755932-56e6ba00-cacd-11eb-902f-65f1375bcc3b.png)
-![image](https://user-images.githubusercontent.com/7797349/121755956-6534d600-cacd-11eb-82a9-cef57ee5605f.png)
+![image](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/GN_calc.png)
 
 # Accuracy and Loss Plots
 
