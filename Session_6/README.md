@@ -1,7 +1,7 @@
 <h1 align="center"> Normalization</h1>
 
 1. [Plots](https://github.com/narasimhachakravarti/EVA7/blob/main/Session_6/README.md#accuracy-and-loss-plots)
-2. [Misclassified Images](https://github.com/madhucharan/EVA6/blob/main/S6/README.md#misclassified-images)
+2. [Misclassified Images](https://github.com/narasimhachakravarti/EVA7/blob/main/Session_6/README.md#misclassified-images)
 
 ## What is your code all about
 
@@ -72,16 +72,16 @@ We notice that Group & Layer normalization perform well in lower epochs, all 3 e
 
 ## <h2 align="center">Batch Normalization (with L1)<h2>
 
-![enter image description here](https://i.postimg.cc/d3v4b0WX/image.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/BN_misclassfied.png)
 
 ---
 
 ## <h2 align="center">Group Normalization<h2>
 
-![enter image description here](https://i.postimg.cc/13gcY6mX/image.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/GN_misclassfied.png)
 
 ---
 
 ## <h2 align="center">Layer Normalization<h2>
 
-![enter image description here](https://i.postimg.cc/L8ZLVpDZ/image.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/LN_misclassfied.png)
