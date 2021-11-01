@@ -72,16 +72,16 @@ We notice that Group & Layer normalization perform well in lower epochs, all 3 e
 
 ## <h2 align="center">Batch Normalization (with L1)<h2>
 
-![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/BN_misclassfied.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/BN_misclassified.png)
 
 ---
 
 ## <h2 align="center">Group Normalization<h2>
 
-![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/GN_misclassfied.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/GN_misclassified.png)
 
 ---
 
 ## <h2 align="center">Layer Normalization<h2>
 
-![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/LN_misclassfied.png)
+![enter image description here](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/LN_misclassified.png)
