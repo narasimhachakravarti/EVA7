@@ -28,6 +28,7 @@ Suggested LR: **1.67E-02**
 ## Logs
 
 The training and testing logs are as follows:
+
 EPOCH: 0
 Loss=1.5715450048446655 Batch_id=97 Accuracy=32.01: 100%|██████████| 98/98 [00:56<00:00, 1.73it/s]
 
