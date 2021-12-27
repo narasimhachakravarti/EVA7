@@ -53,15 +53,3 @@ Link to dataset -
 [![image.png](https://i.postimg.cc/qvCG116m/image.png)](https://postimg.cc/3kYpRCBp)
 
 [![image.png](https://i.postimg.cc/ZqS6V4SR/image.png)](https://postimg.cc/LJxqsdhK)
-
-### Video to Frames -- ffmeg
-
-> ! ffmpeg -i /content/yolo_vid_trimmed.mp4 yolovid/image-%03d.jpg
-
-### Inference on Frames
-
-> ! python detect.py --conf-thres 0.25 --output yolovid_out
-
-### Frames to Video - ffmeg
-
-> ! ffmpeg -i yolovid_out/image-%03d.jpg video.mp4
