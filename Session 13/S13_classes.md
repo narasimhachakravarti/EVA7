@@ -28,8 +28,8 @@ Image to Patch Embedding.
 
 ```
 
-1. Parameters
-   - image size
-   - Parch size
-   - num of channels
-   - embed dim
+- Parameters
+  - image size
+  - Parch size
+  - num of channels
+  - embed dim
