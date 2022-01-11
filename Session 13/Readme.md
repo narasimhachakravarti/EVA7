@@ -25,6 +25,18 @@ channels=3,
 - `channels`: int, default `3`.  
   Number of image's channels.
 
+## Data set
+
+os.makedirs('data', exist_ok=True)
+train_dir = 'data/train'
+test_dir = 'data/test'
+
+## Data sample
+
+![image](https://github.com/narasimhachakravarti/EVA7/blob/main/Images/session13.png)
+
+## Epochs
+
 100%
 313/313 [02:38<00:00, 2.26it/s]
 Epoch : 1 - loss : 0.6713 - acc: 0.5798 - val_loss : 0.6722 - val_acc: 0.5831
