@@ -58,3 +58,33 @@ We will be getting the shape with batch, embedding and number of patches in the 
 Once we flatten the image we will be having embedding dimension and the number pixels in the image say (768 \* 196) in our example
 
 And we will pass to forward function
+
+## Class 2
+
+```
+class ViTEmbeddings(nn.Module):
+
+    def __init__(self, config):
+        super().__init__()
+
+        self.cls_token = nn.Parameter(torch.zeros(1, 1, config.hidden_size))
+        self.patch_embeddings = PatchEmbeddings(
+            image_size=config.image_size,
+            patch_size=config.patch_size,
+            num_channels=config.num_channels,
+            embed_dim=config.hidden_size,
+        )
+        num_patches = self.patch_embeddings.num_patches
+        self.position_embeddings = nn.Parameter(torch.zeros(1, num_patches + 1, config.hidden_size))
+        self.dropout = nn.Dropout(config.hidden_dropout_prob)
+
+    def forward(self, pixel_values):
+        batch_size = pixel_values.shape[0]
+        embeddings = self.patch_embeddings(pixel_values)
+
+        cls_tokens = self.cls_token.expand(batch_size, -1, -1)
+        embeddings = torch.cat((cls_tokens, embeddings), dim=1)
+        embeddings = embeddings + self.position_embeddings
+        embeddings = self.dropout(embeddings)
+        return embeddings
+```
