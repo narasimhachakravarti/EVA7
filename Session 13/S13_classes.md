@@ -1,10 +1,9 @@
 # Session 13 Classes
 
+```
 class PatchEmbeddings(nn.Module):
-"""
 Image to Patch Embedding.
 
-    """
 
     def __init__(self, image_size=224, patch_size=16, num_channels=3, embed_dim=768):
         super().__init__()
@@ -26,6 +25,8 @@ Image to Patch Embedding.
             )
         x = self.projection(pixel_values).flatten(2).transpose(1, 2)
         return x
+
+```
 
 1. Parameters
    - image size
