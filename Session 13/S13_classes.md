@@ -88,3 +88,18 @@ class ViTEmbeddings(nn.Module):
         embeddings = self.dropout(embeddings)
         return embeddings
 ```
+
+- Define the classification token with the embedding dimension nn.Parameter(torch.zeros(1, 1, 768))
+
+- We will add positional embedding with the shape (197 \* 768)
+
+```
+ self.patch_embeddings = PatchEmbeddings(
+            image_size=config.image_size,
+            patch_size=config.patch_size,
+            num_channels=config.num_channels,
+            embed_dim=config.hidden_size,
+        )
+```
+
+Pass image size, patch size, num of channels and embed dim to the Parch embedding class.
