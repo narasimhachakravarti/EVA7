@@ -1,5 +1,7 @@
 # Session 13 Classes
 
+## Class 1
+
 ```
 class PatchEmbeddings(nn.Module):
 Image to Patch Embedding.
@@ -29,7 +31,30 @@ Image to Patch Embedding.
 ```
 
 - Parameters
+
   - image size
-  - Parch size
+  - Patch size
   - num of channels
   - embed dim
+
+- Convert image size and patch size into tuple
+
+```
+def to_2tuple(x):
+  if isinstance(x, collections.abc.Iterable):
+    return x
+  return x, x
+```
+
+- Convolution layer
+
+```
+nn.Conv2d(num_channels, embed_dim, kernel_size=patch_size, stride=patch_size)
+
+```
+
+We will be getting the shape with batch, embedding and number of patches in the image
+
+Once we flatten the image we will be having embedding dimension and the number pixels in the image say (768 \* 196) in our example
+
+And we will pass to forward function
