@@ -18,7 +18,7 @@ Github Link : https://github.com/narasimhachakravarti/EVA7/blob/main/Session%201
 
 4. Bipartite loss: To compute loss function, we need to match outputs to ground truth. Since there is no inherent ordering for objects in image, the ground truth and output do not have a direct 1-1 correspondence. So each decoder output (class, bb) is scanned against the closest (class, bb) in the ground truth. Then then next decoder outputs is matched against the remaining ground truths and so on. This bipartite matching is called Hungarian algorithm. Note that it is possible for output to match a bb, but not its class. In this case the loss function will then drive the class to be corrected.
 
-##Result
+## Result
 
 100%
 313/313 [02:38<00:00, 2.26it/s]
