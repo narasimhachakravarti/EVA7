@@ -4,7 +4,7 @@
 
 ## Code Links
 
-Colab Link : https://colab.research.google.com/drive/1yMIhArfET1yKL9zX3ajYBrgM-KfWTshd#scrollTo=Xah2L2LE_lx7
+Colab Link : https://colab.research.google.com/drive/1GHr8QiJYIr_-h74pZgcDkhVVkDjZbyl4#scrollTo=L5DlkJmsUk3n
 
 Github Link : https://github.com/narasimhachakravarti/EVA7/blob/main/Session%2014/Readme.md
 
